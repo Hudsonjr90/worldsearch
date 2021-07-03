@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>População Mundial</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<link rel="icon" href="assets/globo.png" />
+</head>
+<body>
+<header>
+	<div class="header">
+		<div class="header-left">
+			Em que lugar do mundo você está?
+		</div>
+		<div class="header-right">
+			<i class="fas fa-moon"></i> <span>Dark Mode</span>
+		</div>
+	</div>
+</header>
+<div class="seekable-area">
+	<div class="seekable-area-left">
+		<input type="text" placeholder="Pesquise um País..." id="searchInput">
+	</div>
+	<div class="seekable-area-right">
+		<select id="country-category">
+			<option>Todos</option>
+			<option>África</option>
+			<option>América</option>
+			<option>Ásia</option>
+			<option>Europa</option>
+			<option>Oceania</option>
+		</select>
+	</div>
+</div>
+<div class="country-list">
+	<div class="country-wrapper">
+		<div class="country">
+			<div class="country-img">
+				<img src="">
+			</div>
+			<div class="country-details">
+				<h3></h3>
+				<p></p>
+				<p></p>
+				<p></p>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="loadingBar">
+	Carregando...
+</div>
+<div class="modal">
+	<div class="back-button">
+		Voltar
+	</div>
+	<div class="modal-details">
+		<div class="modal-image">
+			<img src="">
+		</div>
+		<div class="modal-text">
+			<div class="text-first-group">
+				<div class="first">
+					<h2></h2>
+					<p>População: <span></span></p>
+					<p>Nome Nativo: <span></span></p>
+					<p>Região: <span></span></p>
+					<p>Sub-região: <span></span></p>
+					<p>Capital: <span></span></p>
+				</div>
+				<div class="second">
+					<p>Domínio: <span></span></p>
+					<p>Moeda: <span></span></p>
+					<p>Língua: <span></span></p>
+				</div>
+			</div>
+			<div class="text-second-group">
+				<p>
+					Países de Fronteira:</p>
+				<div class="border-country--wrapper">
+					<div class="border-country"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<script src="assets/js/script.js"></script>
+</body>
+</html>
