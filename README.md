@@ -1,5 +1,8 @@
 # worldsearch
 
-site  de pesquisa sobre a população mundial, como os países que fazem fronteiras, moedas utilizadas.
+Neste projeto vou usar HTML, CSS e Javascript vanilla.
 
-usando API do rest countries para puxar as informações de cada país.
+Neste projeto vou fazer um aplicativo de países onde você pode encontrar muitas informações sobre todos os países do mundo.
+
+Vou usar uma API (The Rest countries API), você pode encontrá-la aqui https://restcountries.eu/#api-endpoints-name.
+
