@@ -1,3 +1,4 @@
+/* jshint esversion: 8 */
 let countryList = document.querySelector('.country-list');
 let searchInput = document.querySelector('#searchInput');
 let countryCategory = document.querySelector('#country-category');
@@ -15,24 +16,25 @@ let backButton = document.querySelector('.back-button');
 let clickedItemParentAttribute;
 let modeToggle = document.querySelector('.header-right');
 let header = document.querySelector('header');
-async function loadingCountries(){
-	let req = await fetch('https://restcountries.eu/rest/v2/all');
+
+async  function loadingCountries(){
+	let req = await fetch('https://restcountries.com/v2/all');
 	let json = await req.json();
 	montarPaises(json);
 }
 
 async function loadingRegion(){
-	let req = await fetch(`https://restcountries.eu/rest/v2/region/${selectedCountry}`);
+	let req = await fetch(`https://restcountries.com/v3.1/region/${selectedCountry}`);
 	let json = await req.json();
 	montarRegiao(json);
 }
 async function matchedCountries(){
-	let req = await fetch(`https://restcountries.eu/rest/v2/name/${searchInput.value}`);
+	let req = await fetch(`https://restcountries.com/v2/name/${searchInput.value}`);
 	let json = await req.json();
 	montarPais(json);
 }
 async function loadingModal(){
-	let req = await fetch(`https://restcountries.eu/rest/v2/alpha/${clickedItemParentAttribute}`);
+	let req = await fetch(`https://restcountries.com/v2/alpha/${clickedItemParentAttribute}`);
 	let json = await req.json();
 	montarModal(json);
 }
